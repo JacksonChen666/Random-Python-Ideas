@@ -23,10 +23,11 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>"""
 
-import string
 import random
+import string
 
 a = 0
+
 
 def ask():
     global a
@@ -36,6 +37,7 @@ def ask():
     elif a > 2000:
         a = 2000
         print("Quizlet does not allow you to import a set over 2000 terms. It has now been set to 2000.")
+
 
 def main():
     with open("Quizlet terms.txt", "w") as f:
@@ -48,6 +50,7 @@ def main():
             for m in range(c):
                 f.write(random.choice(string.ascii_letters))
             f.write("\n")  # new line
+
 
 ask()
 input("Done, open the text and create a new set on quizlet, and just copy and paste in default format")
