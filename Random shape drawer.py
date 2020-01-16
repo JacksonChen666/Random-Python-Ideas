@@ -27,8 +27,6 @@ For more information, please refer to <https://unlicense.org>
 import random
 import turtle
 
-# h
-
 t = turtle.Pen()
 t.speed(0)
 turtle.bgcolor("black")
