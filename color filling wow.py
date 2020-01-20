@@ -32,15 +32,15 @@ t = turtle.Pen()
 # turtle.bgcolor("black")
 t.speed(0)
 
-a = turtle.window_width() - 400  # Window sizes, may not be accurate
-b = turtle.window_width() * -1 + 400  # Window sizes, may not be accurate
-c = turtle.window_height() - 400  # Window sizes, may not be accurate
-d = turtle.window_height() * -1 + 400  # Window sizes, may not be accurate
+a = turtle.window_width() - 410  # Window sizes, may not be accurate
+b = turtle.window_width() * -1 + 410  # Window sizes, may not be accurate
+c = turtle.window_height() - 405  # Window sizes, may not be accurate
+d = turtle.window_height() * -1 + 405  # Window sizes, may not be accurate
 
-q = turtle.window_width() - 400  # Window sizes, may not be accurate
-w = turtle.window_width() * -1 + 400  # Window sizes, may not be accurate
-e = turtle.window_height() - 400  # Window sizes, may not be accurate
-r = turtle.window_height() * -1 + 400  # Window sizes, may not be accurate
+q = turtle.window_width() - 410  # Window sizes, may not be accurate
+w = turtle.window_width() * -1 + 410  # Window sizes, may not be accurate
+e = turtle.window_height() - 405  # Window sizes, may not be accurate
+r = turtle.window_height() * -1 + 405  # Window sizes, may not be accurate
 print(a, b, c, d)
 
 
