@@ -52,7 +52,11 @@ def main():
     while True:
         # print(t.xcor(),t.ycor()) # Position debugging
         # t.up()
+        # l = random.uniform(0,1)
+        # k = random.uniform(0,1)
+        # j = random.uniform(0,1)
         t.pencolor(random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1))
+        # t.fillcolor(l,k,j)
         # t.down()
         t.goto(b, d)
         b = b + 1
