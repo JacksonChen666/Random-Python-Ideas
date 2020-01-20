@@ -39,7 +39,7 @@ b = random.randint(c, v)
 def main():
     t = turtle.Pen()
     while True:
-        t.goto(a, bf)
+        t.goto(a, b)
 
 
 main()
