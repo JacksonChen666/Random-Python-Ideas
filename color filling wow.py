@@ -48,11 +48,12 @@ def main():
     global a, b, c, d, q, w, e, r
     t.up()
     t.setpos(b, d)
+    t.down()
     while True:
         # print(t.xcor(),t.ycor()) # Position debugging
-        t.up()
+        # t.up()
         t.pencolor(random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1))
-        t.down()
+        # t.down()
         t.goto(b, d)
         b = b + 1
         if t.xcor() >= a:
