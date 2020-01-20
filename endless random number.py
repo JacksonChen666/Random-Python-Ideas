@@ -65,7 +65,7 @@ b = random.randint(0, 1000000000000)
 n = random.randint(0, 1000000000000)
 m = random.randint(0, 1000000000000)
 
-print(q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m)
+print(q, w, e, r, t, y, u, i, o, p, a, s, d, f, g, h, j, k, l, z, x, c, v, b, n, m)
 
 # The following are left: qw er ty ui op as df gh jk lz xc vb nm and 13 of them
 Q = random.randint(q, w)
@@ -88,7 +88,7 @@ S = random.randint(v, b)
 
 D = random.randint(n, m)
 
-print(Q,W,E,R,T,Y,U,I,O,P,A,S,D)
+print(Q, W, E, R, T, Y, U, I, O, P, A, S, D)
 
 # The following are left: QW ER TY UI OP AS D and 6.5 left
 q = random.randint(Q, W)
@@ -100,22 +100,22 @@ r = random.randint(U, I)
 t = random.randint(O, P)
 y = random.randint(A, S)
 
-print(q,w,e,r,t,y)
+print(q, w, e, r, t, y)
 
 # The following are left: qw er ty D and 3.5 left
-Q = random.randint(q,w)
-W = random.randint(e,r)
+Q = random.randint(q, w)
+W = random.randint(e, r)
 
-E = random.randint(t,y)
-R = random.randint(D,1000000000000)
+E = random.randint(t, y)
+R = random.randint(D, 1000000000000)
 
-print(Q,W,E,R)
+print(Q, W, E, R)
 
 # The following are left: QW ER and 2 left
 
-q = random.randint(Q,W)
-w = random.randint(E,R)
+q = random.randint(Q, W)
+w = random.randint(E, R)
 
-print(q,w)
+print(q, w)
 
-print("Your random number is", random.randint(q,w))
+print("Your random number is", random.randint(q, w))

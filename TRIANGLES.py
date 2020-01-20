@@ -43,7 +43,7 @@ def main():
     t.pendown()
     while True:
         # t.begin_fill()
-        a = random.randint(0,820)
+        a = random.randint(0, 820)
         # a = a - 1
         # if a <= 0:
         #     a = 825

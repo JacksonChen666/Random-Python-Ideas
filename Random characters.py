@@ -38,12 +38,14 @@ def no_update():
         while True:
             f.write(random.choice(string.printable))
 
+
 def constant_update():
     with open("Random characters.txt", "a") as f:
         while True:
             f.write(random.choice(string.printable))
             a = a + 1
-            print("Written a total of",a,"characters, use CTRL+C to stop")
+            print("Written a total of", a, "characters, use CTRL+C to stop")
+
 
 def oneM_update():
     with open("Random characters.txt", "a") as f:
@@ -51,7 +53,8 @@ def oneM_update():
             for i in range(1000000):
                 f.write(random.choice(string.printable))
             a = a + 1000000
-            print("Written a total of",a,"characters, use CTRL+C to stop")
+            print("Written a total of", a, "characters, use CTRL+C to stop")
+
 
 def tenM_update():
     with open("Random characters.txt", "a") as f:
@@ -59,7 +62,8 @@ def tenM_update():
             for i in range(10000000):
                 f.write(random.choice(string.printable))
             a = a + 10000000
-            print("Written a total of",a,"characters, use CTRL+C to stop")
+            print("Written a total of", a, "characters, use CTRL+C to stop")
+
 
 def hundredM_update():
     with open("Random characters.txt", "a") as f:
@@ -68,6 +72,7 @@ def hundredM_update():
                 f.write(random.choice(string.printable))
             a = a + 100000000
             print("Written a total of", a, "characters, use CTRL+C to stop")
+
 
 def oneB_update():
     with open("Random characters.txt", "a") as f:
@@ -86,6 +91,7 @@ def tenB_update():
             a = a + 10000000000
             print("Written a total of", a, "characters, use CTRL+C to stop")
 
+
 def hundredB_update():
     with open("Random characters.txt", "a") as f:
         while True:
@@ -93,6 +99,7 @@ def hundredB_update():
                 f.write(random.choice(string.printable))
             a = a + 100000000000
             print("Written a total of", a, "characters, use CTRL+C to stop")
+
 
 def oneT_update():
     with open("Random characters.txt", "a") as f:

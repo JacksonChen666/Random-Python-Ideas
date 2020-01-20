@@ -27,6 +27,4 @@ For more information, please refer to <https://unlicense.org>
 a = 0
 while True:
     a = a + 1
-    print("Looped",a,"times")
-
-
+    print("Looped", a, "times")

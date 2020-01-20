@@ -24,7 +24,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
-import string
 
-with open("Testing.txt","w") as f:
+with open("Testing.txt", "w") as f:
     f.write("a")
