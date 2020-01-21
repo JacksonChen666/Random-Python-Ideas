@@ -24,7 +24,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
-import time
 import turtle
 
 t = turtle.Pen()
@@ -43,6 +42,6 @@ while True:
     for i in range(a):
         t.forward(500 / a)
         t.left(360 / a)
-    time.sleep(0.25)
+    # time.sleep(0.25)
     a = a + 1
     t.clear()
