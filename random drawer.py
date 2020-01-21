@@ -38,6 +38,6 @@ a = 0
 while True:
     t.goto(random.randint(-300, 300), random.randint(-300, 300))
     a = a + 1
-    if a >= 100:
-        t.up()
-        turtle.clear()
+    if a >= 500:
+        t.clear()
+        a = 0
