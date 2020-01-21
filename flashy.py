@@ -24,12 +24,15 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
+import random
 import turtle
 
 t = turtle.Pen()
 
 t.ht()
 
+t.write("Flashy", font=("Arial", 200, "normal"), align="center")
 while True:
-    t.write("Flashy", font=("Arial", 200, "normal"), align="center")
-    t.clear()
+    # turtle.bgcolor("black")
+    # turtle.bgcolor("white")
+    turtle.bgcolor(random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1))
