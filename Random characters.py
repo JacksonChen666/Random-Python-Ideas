@@ -34,42 +34,44 @@ c = 1000000
 
 def ask():
     global b
-    b = input("How constantly do you want to be updated with? \nAvalible options: \n'ALWAYS' (100%) (slowest)\n "
-              "'USUALLY' (75%)\n 'MOSTLY' (50%)\n 'SOMETIMES' (25%)\n 'RARELY' (10%)\n  'NEVER' (fastest option)\n "
+    b = input("How constantly do you want to be updated with? \nAvalible options: \n'Always' (100%) (slowest)\n "
+              "'Usually' (75%)\n 'Mostly' (50%)\n 'Sometimes' (25%)\n 'Rarely' (10%)\n  'Never' (fastest option)\n "
               "All calculated in 1M ")
-    if b == "ALWAYS":
+    print(b)
+    if b == "Always":
         pass
-    if b == "USUALLY":
+    if b == "Usually":
         pass
-    if b == "MOSTLY":
+    if b == "Mostly":
         pass
-    if b == "SOMETIMES":
+    if b == "Sometimes":
         pass
-    if b == "RARELY":
+    if b == "Rarely":
         pass
-    if b == "NEVER":
+    if b == "Never":
         pass
     else:
-        print("\nUnavalible option, please try again\n")
+        print("\nUnavailable option, please try again\n")
         ask()
-    read()
+    # read()
+    write()
 
 
-def read():
-    global a
-    with open("Random Characters.txt", "a") as q:
-        pass
-    with open("Random Characters.txt", "r") as r:
-        r.read()
-        print(r)
-        print(len(r))
-        if len(r) >= 0:
-            print("No text found, continueing...")
-            write()
-        else:
-            a = len(r)
-            print("There is a total of", len(r), "characters found")
-            write()
+# def read():
+#     global a
+#     with open("Random Characters.txt", "a") as q:
+#         pass
+#     with open("Random Characters.txt", "r") as r:
+#         r.read()
+#         print(r)
+#         print(len(r))
+#         if len(r) >= 0:
+#             print("No text found, continueing...")
+#             write()
+#         else:
+#             a = len(r)
+#             print("There is a total of", len(r), "characters found")
+#             write()
 
 
 def write():
@@ -79,31 +81,31 @@ def write():
             while True:
                 w.write(random.choice(string.printable))
                 a = a + 1
-                print("There's a total of", a, "characters now")
+                print("Written a total of {} characters".format(c / 1))
         elif b == "USUALLY":
             while True:
                 for i in range(c / 25):
                     w.write(random.choice(string.printable))
                 a = a + c / 25
-                print("There's a total of", a, "characters now")
+                print("Written a total of {} characters".format(c / 25))
         elif b == "MOSTLY":
             while True:
                 for i in range(c / 50):
                     w.write(random.choice(string.printable))
                 a = a + c / 50
-                print("There's a total of", a, "characters now")
+                print("Written a total of {} characters".format(c / 50))
         elif b == "SOMETIMES":
             while True:
                 for i in range(c / 75):
                     w.write(random.choice(string.printable))
                 a = a + c / 75
-                print("There's a total of", a, "characters now")
+                print("Written a total of {} characters".format(c / 75))
         elif b == "RARELY":
             while True:
                 for i in range(c / 90):
                     w.write(random.choice(string.printable))
                 a = a + c / 90
-                print("There's a total of", a, "characters now")
+                print("Written a total of {} characters".format(c / 90))
         elif b == "NEVER":
             while True:
                 w.write(random.choice(string.printable))
