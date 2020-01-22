@@ -24,13 +24,44 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
+import time
 
-a = input("What is your full name? ")
-if a == "Jackson Chen":
-    print("Welcome")
-else:
-    with open("People who tried to get into my computer.txt", "a") as f:
-        f.write(a)
-        f.write("\n")
-        while True:
-            print("GET OUT OF HERE YOU MONSTER")
+
+def ask():
+    global b
+    b = input("What is the password?\n")
+    main()
+
+
+def main():
+    global b
+    if b == "h":
+        print("The password is 0123456789")
+        exit()
+    elif b == "h4ck3r m0d3 666":
+        time.sleep(0.5)
+        print("Connecting to hacking server...")
+        time.sleep(5)
+        print("Requesting data...")
+        time.sleep(2)
+        print("Receiving data...")
+        time.sleep(5)
+        print("Decoding encrypted data...")
+        time.sleep(10)
+        print("Reading data....")
+        time.sleep(3)
+        print("Succsessful! Entering password...")
+        b = "h"
+        time.sleep(0.5)
+        ask2()
+    else:
+        print("Wrong code, please try again!\n")
+        ask()
+
+
+def ask2():
+    input("\n   What's the password?\n")
+    main()
+
+
+ask()
