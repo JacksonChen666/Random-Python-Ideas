@@ -50,7 +50,7 @@ def main():
         time.sleep(10)
         print("Reading data....")
         time.sleep(3)
-        print("Succsessful! Entering password...")
+        print("Successful! Entering password...")
         b = "h"
         time.sleep(0.5)
         ask2()
