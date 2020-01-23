@@ -30,12 +30,6 @@ t = turtle.Pen()
 a = 2
 t.speed(0)
 
-# for i in range(3):
-#     t.write("Test", font=("Arial", 30, "normal"))
-#     time.sleep(0.1)
-#     t.clear()
-#     time.sleep(0.1)
-
 while True:
     # print(a)
     t.write(a, font=("Arial", 50, "normal"), align="center")
