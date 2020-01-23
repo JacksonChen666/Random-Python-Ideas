@@ -31,11 +31,9 @@ a = 2
 t.speed(0)
 
 while True:
-    # print(a)
     t.write(a, font=("Arial", 50, "normal"), align="center")
     for i in range(a):
         t.forward(500 / a)
         t.left(360 / a)
-    # time.sleep(0.25)
     a = a + 1
     t.clear()
