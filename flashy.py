@@ -33,6 +33,4 @@ t.ht()
 
 t.write("Flashy", font=("Arial", 200, "normal"), align="center")
 while True:
-    # turtle.bgcolor("black")
-    # turtle.bgcolor("white")
     turtle.bgcolor(random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1))

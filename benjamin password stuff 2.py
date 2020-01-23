@@ -60,7 +60,7 @@ def main():
 
 
 def ask2():
-    input("\n   What's the password?\n")
+    input("\nWhat's the password?\n")
     main()
 
 
