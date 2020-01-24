@@ -49,6 +49,7 @@ def __init__():
     turtle.title("Custom turtle drawer Intro: bit.ly/CustomTurtleIntro")
     t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nR to reset\nC to clear\nClick to exit (for "
             "now)\nE to exit", font=("Arial", 50, "normal"), align="center")
+    turtle.exitonclick()
 
 
 def tExit():
@@ -59,10 +60,5 @@ def tExit():
     turtle.bye()
 
 
-
-
 if __name__ == "__main__":
     __init__()
-    turtle.onkey(tExit(), "e")
-    turtle.listen()
-    turtle.mainloop()
