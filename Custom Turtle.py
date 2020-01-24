@@ -140,7 +140,8 @@ if __name__ == '__main__':
     ts = turtle.Screen()
     ts.setup(width=1.0, height=1.0)
     turtle.title("Custom turtle drawer Intro: bit.ly/CustomTurtleIntro")
-    t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nUse WASD to control, best with arrow keys\nR to "
+    t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nUse WASD to control, best with arrow keys\nR "
+            "to "
             "reset\nC to clear\nE to exit",
             font=("Arial", 50, "normal"), align="center")
     __init__()
