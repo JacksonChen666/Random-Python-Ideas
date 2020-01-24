@@ -59,12 +59,10 @@ def tExit():
     turtle.bye()
 
 
-def main():
-    turtle.onkey(tExit(), "e")
-    turtle.listen()
-    turtle.mainloop()
 
 
 if __name__ == "__main__":
     __init__()
-    main()
+    turtle.onkey(tExit(), "e")
+    turtle.listen()
+    turtle.mainloop()
