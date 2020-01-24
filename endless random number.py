@@ -60,18 +60,8 @@ def number():
     if q >= w:
         print("oops")
     elif e >= r:
-    elif >=:
-    elif >=:
-    elif >=:
-    elif >=:
-    elif >=:
-    elif >=:
-    elif >=:
-    elif >=:
-    elif >=:
-    elif >=:
-    else:
-        exit()
+        pass
+    exit()
 
 
 while True:

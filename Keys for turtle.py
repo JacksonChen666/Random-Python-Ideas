@@ -24,41 +24,91 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
-import time
 import turtle
 
 t = turtle.Pen()
-
-# Stuff with pen: onclick, ondrag, onrelease, reset, setangle, write, back, goto, home, pos, setpos, clear, done,
-# exitonclick, ondrag, onkey, onkeypress, onkeyrelease, onscreenclick, textinput, title
-
-"""
-Keys to bind:
-F as of filling
-R as reset
-C as Clear
-# E as to end the code 
-U to undo
-Q as 
-"""
-
-
-def __init__():
-    tScreen = turtle.Screen()
-    tScreen.setup(width=1.0, height=1.0)
-    turtle.title("Custom turtle drawer Intro: bit.ly/CustomTurtleIntro")
-    t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nR to reset\nC to clear\nClick to exit (for "
-            "now)\nE to exit", font=("Arial", 50, "normal"), align="center")
-    turtle.exitonclick()
 
 
 def tExit():
     turtle.title("Goodbye")
     t.clear()
     t.write("Goodbye!", font=("Arial", 50, "normal"), align="center")
-    time.sleep(1)
     turtle.bye()
 
 
-if __name__ == "__main__":
+def clear():
+    t.clear()
+
+
+def forward():
+    t.forward(10)
+
+
+def backward():
+    t.backward(10)
+
+
+def left():
+    t.left(10)
+
+
+def right():
+    t.right(10)
+
+
+def reset():
+    t.reset()
+
+
+def exits():
+    turtle.bye()
+
+
+def fill():
+    global a
+    if a == 0:
+        a = 1
+        t.begin_fill()
+    elif a == 1:
+        a = 0
+        t.end_fill()
+
+
+a = 0
+
+
+def __init__():
+    ts = turtle.Screen()
+    ts.setup(width=1.0, height=1.0)
+    turtle.title("Custom turtle drawer Intro: bit.ly/CustomTurtleIntro")
+    t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nR to reset\nC to clear\nE to exit",
+            font=("Arial", 50, "normal"), align="center")
+    ts.onkeypress(forward, "w")
+    ts.onkeypress(forward, "Up")
+    ts.onkeypress(backward, "s")
+    ts.onkeypress(backward, "Down")
+    ts.onkeypress(left, "a")
+    ts.onkeypress(left, "Left")
+    ts.onkeypress(right, "d")
+    ts.onkeypress(right, "Right")
+    ts.onkey(reset, "r")
+    ts.onkey(clear, "c")
+    ts.onkey(exits, "e")
+    ts.onkey(fill, "f")
+    ts.listen()
+    ts.mainloop()
+
+
+if __name__ == '__main__':
     __init__()
+
+"""
+Keys to bind:
+F as of filling
+U to undo
+Q as 
+H as home
+"""
+
+# Stuff with pen: onclick, ondrag, onrelease, reset, setangle, write, back, goto, home, pos, setpos, clear, done,
+# exitonclick, ondrag, onkey, onkeypress, onkeyrelease, onscreenclick, textinput, title
