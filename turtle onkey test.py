@@ -24,47 +24,15 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
-import time
 import turtle
 
 t = turtle.Pen()
 
-# Stuff with pen: onclick, ondrag, onrelease, reset, setangle, write, back, goto, home, pos, setpos, clear, done,
-# exitonclick, ondrag, onkey, onkeypress, onkeyrelease, onscreenclick, textinput, title
 
-"""
-Keys to bind:
-F as of filling
-R as reset
-C as Clear
-# E as to end the code 
-U to undo
-Q as 
-"""
+def test():
+    t.write("Test")
 
 
-def __init__():
-    tScreen = turtle.Screen()
-    tScreen.setup(width=1.0, height=1.0)
-    turtle.title("Custom turtle drawer Intro: bit.ly/CustomTurtleIntro")
-    t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nR to reset\nC to clear\nClick to exit (for "
-            "now)\nE to exit", font=("Arial", 50, "normal"), align="center")
+turtle.onscreenclick(test())
 
-
-def tExit():
-    turtle.title("Goodbye")
-    t.clear()
-    t.write("Goodbye!", font=("Arial", 50, "normal"), align="center")
-    time.sleep(1)
-    turtle.bye()
-
-
-def main():
-    turtle.onkey(tExit(), "e")
-    turtle.listen()
-    turtle.mainloop()
-
-
-if __name__ == "__main__":
-    __init__()
-    main()
+turtle.bye()
