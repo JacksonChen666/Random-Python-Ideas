@@ -74,15 +74,47 @@ def fill():
         t.end_fill()
 
 
+def pen():
+    global b
+    if b == 0:
+        b = 1
+        t.up()
+    elif b == 1:
+        b = 0
+        t.down()
+
+
+def home():
+    t.home()
+
+
+def screensize():
+    global c
+    if c == 0:
+        ts.setup(width=1.0, height=1.0)
+        c = 1
+    elif c == 1:
+        ts.setup(width=0.5, height=0.75)
+        c = 0
+
+
+def undo():
+    t.undo()
+
+
+def writeinputtext():
+    d = turtle.textinput("Text", "What text do you want to write?")
+    t.write(d, align="center", font=("Arial", 50, "normal"))
+    turtle.listen()
+    turtle.mainloop()
+
+
 a = 0
+b = 0
+c = 1
 
 
 def __init__():
-    ts = turtle.Screen()
-    ts.setup(width=1.0, height=1.0)
-    turtle.title("Custom turtle drawer Intro: bit.ly/CustomTurtleIntro")
-    t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nR to reset\nC to clear\nE to exit",
-            font=("Arial", 50, "normal"), align="center")
     ts.onkeypress(forward, "w")
     ts.onkeypress(forward, "Up")
     ts.onkeypress(backward, "s")
@@ -95,20 +127,41 @@ def __init__():
     ts.onkey(clear, "c")
     ts.onkey(exits, "e")
     ts.onkey(fill, "f")
+    ts.onkey(home, "h")
+    ts.onkey(undo, "u")
+    ts.onkey(screensize, "g")
+    ts.onkey(pen, "p")
+    ts.onkey(writeinputtext, "t")
     ts.listen()
     ts.mainloop()
 
 
 if __name__ == '__main__':
+    ts = turtle.Screen()
+    ts.setup(width=1.0, height=1.0)
+    turtle.title("Custom turtle drawer Intro: bit.ly/CustomTurtleIntro")
+    t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nUse WASD to control, best with arrow keys\nR to "
+            "reset\nC to clear\nE to exit",
+            font=("Arial", 50, "normal"), align="center")
     __init__()
 
 """
 Keys to bind:
-F as of filling
+
+
+Keys binded:
+G as full screen and normal
+T as to write text (user input)
 U to undo
-Q as 
+P as pen up and down
+H as home
+WASD and arrow keys
+R as Reset
+C as clear
+E as exit
+F as fillings
 H as home
 """
 
 # Stuff with pen: onclick, ondrag, onrelease, reset, setangle, write, back, goto, home, pos, setpos, clear, done,
-# exitonclick, ondrag, onkey, onkeypress, onkeyrelease, onscreenclick, textinput, title
+# exitonclick, ondrag, onscreenclick, textinput
