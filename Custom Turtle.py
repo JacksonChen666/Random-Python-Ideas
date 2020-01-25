@@ -198,7 +198,7 @@ Z as pen filling color (broken)
 J as set angle (broken)
 
 Keys binded:
-O as position (on screen, temp)
+O as position (on-screen, temp)
 G as full screen and normal
 T as to write text (user input)
 U to undo
