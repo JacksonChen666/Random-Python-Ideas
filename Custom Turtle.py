@@ -24,9 +24,8 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
+import time
 import turtle
-
-t = turtle.Pen()
 
 
 def tExit():
@@ -58,6 +57,8 @@ def right():
 
 def reset():
     t.reset()
+    t.speed(0)
+    mainloop()
 
 
 def exits():
@@ -85,7 +86,9 @@ def pen():
 
 
 def home():
+    t.up()
     t.home()
+    t.down()
 
 
 def screensize():
@@ -105,13 +108,47 @@ def undo():
 def writeinputtext():
     d = turtle.textinput("Text", "What text do you want to write?")
     t.write(d, align="center", font=("Arial", 50, "normal"))
+    mainloop()
+
+
+def pos():
+    t.write(turtle.pos(), align="center", font=("Arial", 50, "normal"))
+    time.sleep(1)
+    undo()
+    mainloop()
+
+
+# def setangle():
+#     h = turtle.textinput("Set angle", "What angle to you want to set to? 0-360")
+#     turtle.setpos(h)
+#     mainloop()
+
+
+def mainloop():
     turtle.listen()
     turtle.mainloop()
+
+
+# def pencolor():
+#     d = turtle.textinput("Red Pen Color", "How much red do you want? 0-1")
+#     e = turtle.textinput("Green Pen Color", "How much green do you want? 0-1")
+#     f = turtle.textinput("Blue Pen Color", "How much blue do you want? 0-1")
+#     t.pencolor(d, e, f)
+#     mainloop()
+#
+#
+# def fillcolor():
+#     d = turtle.textinput("Red Fill Color", "How much red do you want? 0-1")
+#     e = turtle.textinput("Green Fill Color", "How much green do you want? 0-1")
+#     f = turtle.textinput("Blue Fill Color", "How much blue do you want? 0-1")
+#     t.fillcolor(d, e, f)
+#     mainloop()
 
 
 a = 0
 b = 0
 c = 1
+h = 0
 
 
 def __init__():
@@ -132,37 +169,43 @@ def __init__():
     ts.onkey(screensize, "g")
     ts.onkey(pen, "p")
     ts.onkey(writeinputtext, "t")
-    ts.listen()
-    ts.mainloop()
+    ts.onkey(pos, "o")
+    # ts.onkey(setangle, "j")
+    # ts.onkey(pencolor, "x")
+    # ts.onkey(fillcolor, "z")
+    mainloop()
 
 
 if __name__ == '__main__':
+    t = turtle.Pen()
+    t.speed(0)
     ts = turtle.Screen()
     ts.setup(width=1.0, height=1.0)
     turtle.title("Custom turtle drawer Intro: bit.ly/CustomTurtleIntro")
     t.write("Know how to use this program at bit.ly/CustomTurtleIntro\nUse WASD to control, best with arrow keys\nR "
-            "to "
-            "reset\nC to clear\nE to exit",
-            font=("Arial", 50, "normal"), align="center")
+            "to reset\nC to clear\nE to exit", font=("Arial", 50, "normal"), align="center")
+    turtle.onscreenclick(t.goto)
     __init__()
+    mainloop()
 
 """
 Keys to bind:
-
+X as pen color (broken)
+Z as pen filling color (broken)
+J as set angle (broken)
 
 Keys binded:
+O as position (on screen, temp)
 G as full screen and normal
 T as to write text (user input)
 U to undo
 P as pen up and down
 H as home
-WASD and arrow keys
+WASD and arrow keys for movement
 R as Reset
 C as clear
 E as exit
 F as fillings
-H as home
 """
 
-# Stuff with pen: onclick, ondrag, onrelease, reset, setangle, write, back, goto, home, pos, setpos, clear, done,
-# exitonclick, ondrag, onscreenclick, textinput
+# Stuff with pen: goto,  pos, setpos, exitonclick,
