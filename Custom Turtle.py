@@ -58,7 +58,8 @@ def right():
 def reset():
     t.reset()
     t.speed(0)
-    mainloop()
+    turtle.listen()
+    turtle.mainloop()
 
 
 def exits():
@@ -108,25 +109,23 @@ def undo():
 def writeinputtext():
     d = turtle.textinput("Text", "What text do you want to write?")
     t.write(d, align="center", font=("Arial", 50, "normal"))
-    mainloop()
+    turtle.listen()
+    turtle.mainloop()
 
 
 def pos():
     t.write(turtle.pos(), align="center", font=("Arial", 50, "normal"))
     time.sleep(1)
     undo()
-    mainloop()
+    turtle.listen()
+    turtle.mainloop()
 
 
 # def setangle():
 #     h = turtle.textinput("Set angle", "What angle to you want to set to? 0-360")
 #     turtle.setpos(h)
-#     mainloop()
-
-
-def mainloop():
-    turtle.listen()
-    turtle.mainloop()
+#     turtle.listen()
+#     turtle.mainloop()
 
 
 # def pencolor():
@@ -134,7 +133,8 @@ def mainloop():
 #     e = turtle.textinput("Green Pen Color", "How much green do you want? 0-1")
 #     f = turtle.textinput("Blue Pen Color", "How much blue do you want? 0-1")
 #     t.pencolor(d, e, f)
-#     mainloop()
+#     turtle.listen()
+# turtle.mainloop()
 #
 #
 # def fillcolor():
@@ -142,7 +142,8 @@ def mainloop():
 #     e = turtle.textinput("Green Fill Color", "How much green do you want? 0-1")
 #     f = turtle.textinput("Blue Fill Color", "How much blue do you want? 0-1")
 #     t.fillcolor(d, e, f)
-#     mainloop()
+#     turtle.listen()
+#     turtle.mainloop()
 
 
 a = 0
@@ -173,7 +174,8 @@ def __init__():
     # ts.onkey(setangle, "j")
     # ts.onkey(pencolor, "x")
     # ts.onkey(fillcolor, "z")
-    mainloop()
+    turtle.listen()
+    turtle.mainloop()
 
 
 if __name__ == '__main__':
@@ -186,7 +188,8 @@ if __name__ == '__main__':
             "to reset\nC to clear\nE to exit", font=("Arial", 50, "normal"), align="center")
     turtle.onscreenclick(t.goto)
     __init__()
-    mainloop()
+    turtle.listen()
+    turtle.mainloop()
 
 """
 Keys to bind:
@@ -208,4 +211,4 @@ E as exit
 F as fillings
 """
 
-# Stuff with pen: goto,  pos, setpos, exitonclick,
+# Stuff with pen: goto, setpos, exitonclick
