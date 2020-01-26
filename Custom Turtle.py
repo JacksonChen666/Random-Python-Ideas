@@ -87,9 +87,11 @@ def pen():
 
 
 def home():
+    t.speed(2)
     t.up()
     t.home()
     t.down()
+    t.speed(0)
 
 
 def screensize():
@@ -211,4 +213,4 @@ E as exit
 F as fillings
 """
 
-# Stuff with pen: goto, setpos, exitonclick
+# Stuff with pen:
