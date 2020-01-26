@@ -217,5 +217,3 @@ C as clear
 E as exit
 F as fillings
 """
-
-# Stuff with pen:
