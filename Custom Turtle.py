@@ -29,9 +29,8 @@ import turtle
 
 
 def tExit():
-    turtle.title("Goodbye")
-    t.clear()
-    t.write("Goodbye!", font=("Arial", 50, "normal"), align="center")
+    turtle.title("Screenshot just in case, closes in 5 secs")
+    time.sleep(5)
     turtle.bye()
 
 
@@ -40,19 +39,19 @@ def clear():
 
 
 def forward():
-    t.forward(10)
+    t.forward(q)
 
 
 def backward():
-    t.backward(10)
+    t.backward(q)
 
 
 def left():
-    t.left(10)
+    t.left(q)
 
 
 def right():
-    t.right(10)
+    t.right(q)
 
 
 def reset():
@@ -60,10 +59,6 @@ def reset():
     t.speed(0)
     turtle.listen()
     turtle.mainloop()
-
-
-def exits():
-    turtle.bye()
 
 
 def fill():
@@ -123,6 +118,13 @@ def pos():
     turtle.mainloop()
 
 
+def speed():
+    q = turtle.textinput("Speed",
+                         "How many pixels do you want to move with 1 click? Applies to all movement Default=10")
+    turtle.listen()
+    turtle.mainloop()
+
+
 # def setangle():
 #     h = turtle.textinput("Set angle", "What angle to you want to set to? 0-360")
 #     turtle.setpos(h)
@@ -152,6 +154,7 @@ a = 0
 b = 0
 c = 1
 h = 0
+q = 10
 
 
 def __init__():
@@ -165,7 +168,7 @@ def __init__():
     ts.onkeypress(right, "Right")
     ts.onkey(reset, "r")
     ts.onkey(clear, "c")
-    ts.onkey(exits, "e")
+    ts.onkey(tExit, "e")
     ts.onkey(fill, "f")
     ts.onkey(home, "h")
     ts.onkey(undo, "u")
@@ -173,6 +176,7 @@ def __init__():
     ts.onkey(pen, "p")
     ts.onkey(writeinputtext, "t")
     ts.onkey(pos, "o")
+    ts.onkey(speed, "i")
     # ts.onkey(setangle, "j")
     # ts.onkey(pencolor, "x")
     # ts.onkey(fillcolor, "z")
@@ -200,6 +204,7 @@ Z as pen filling color (broken)
 J as set angle (broken)
 
 Keys binded:
+I as speed
 O as position (on-screen, temp)
 G as full screen and normal
 T as to write text (user input)
