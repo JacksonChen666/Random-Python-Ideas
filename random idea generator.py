@@ -27,13 +27,12 @@ For more information, please refer to <https://unlicense.org>
 import random
 
 a = ["Turtle", "Random", "Ask"]
-b = ["Others", "Draw", "Keyboard", "Myself"]
-c = ["", "Crab", "Turtle", "Butterfly", "Computer"]
+b = ["Others", "Draw", "Keyboard", "Myself", "Mom"]
+c = ["", "Crab", "Turtle", "Butterfly", "Computer", "Yes"]
 
 q = ""
 w = ""
 e = ""
-
 r = ""
 
 len(a)
