@@ -29,8 +29,6 @@ import turtle
 
 
 def tExit():
-    turtle.title("Screenshot just in case, closes in 5 secs")
-    time.sleep(5)
     turtle.bye()
 
 
