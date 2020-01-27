@@ -24,7 +24,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
-import time
 import turtle
 
 
@@ -108,12 +107,12 @@ def writeinputtext():
     turtle.mainloop()
 
 
-def pos():
-    t.write(turtle.pos(), align="center", font=("Arial", 50, "normal"))
-    time.sleep(1)
-    undo()
-    turtle.listen()
-    turtle.mainloop()
+# def pos():
+#     t.write(turtle.pos(), align="center", font=("Arial", 50, "normal"))
+#     time.sleep(1)
+#     undo()
+#     turtle.listen()
+#     turtle.mainloop()
 
 
 def speed():
@@ -173,8 +172,7 @@ def __init__():
     ts.onkey(screensize, "g")
     ts.onkey(pen, "p")
     ts.onkey(writeinputtext, "t")
-    ts.onkey(pos, "o")
-    ts.onkey(speed, "i")
+    # ts.onkey(pos, "o")
     # ts.onkey(setangle, "j")
     # ts.onkey(pencolor, "x")
     # ts.onkey(fillcolor, "z")
@@ -200,10 +198,10 @@ Keys to bind:
 X as pen color (broken)
 Z as pen filling color (broken)
 J as set angle (broken)
+O as position (on-screen, temp, broken)
 
 Keys binded:
 I as speed
-O as position (on-screen, temp)
 G as full screen and normal
 T as to write text (user input)
 U to undo
