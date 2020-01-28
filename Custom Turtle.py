@@ -199,9 +199,9 @@ X as pen color (broken)
 Z as pen filling color (broken)
 J as set angle (broken)
 O as position (on-screen, temp, broken)
+I as speed (broken)
 
 Keys binded:
-I as speed
 G as full screen and normal
 T as to write text (user input)
 U to undo
