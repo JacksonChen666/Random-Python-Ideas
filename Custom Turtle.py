@@ -122,6 +122,9 @@ def speed():
     turtle.mainloop()
 
 
+def sides():
+    
+
 # def setangle():
 #     h = turtle.textinput("Set angle", "What angle to you want to set to? 0-360")
 #     turtle.setpos(h)
@@ -152,6 +155,7 @@ b = 0
 c = 1
 h = 0
 q = 10
+u = 0
 
 
 def __init__():
