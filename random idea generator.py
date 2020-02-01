@@ -35,10 +35,9 @@ w = ""
 e = ""
 r = ""
 
-len(a)
-
+p = len(a) * len(b) * len(c)
 with open("Random Python Ideas.txt", "w") as f:
-    while True:
+    for i in range(p):
         q = random.choice(a)
         w = random.choice(b)
         e = random.choice(c)
@@ -46,3 +45,4 @@ with open("Random Python Ideas.txt", "w") as f:
         # print(r)
         f.write(str(r))
         f.write("\n")
+print("done")
