@@ -123,7 +123,7 @@ def speed():
 
 
 def sides():
-    
+    pass
 
 # def setangle():
 #     h = turtle.textinput("Set angle", "What angle to you want to set to? 0-360")

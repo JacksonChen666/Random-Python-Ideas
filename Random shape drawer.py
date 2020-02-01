@@ -52,6 +52,11 @@ def main():
     t.end_fill()
 
 
-while True:
-    main()
-    # print(c, d, e, f)
+ts = turtle.Screen()
+ts.setup(width=1.0, height=1.0)
+
+try:
+    while True:
+        main()
+except turtle.Terminator:
+    print("Error: User closed turtle window")
