@@ -26,15 +26,15 @@ For more information, please refer to <https://unlicense.org>
 """
 import random
 
-a = ["Turtle", "Random", "Ask", "Do"]
+a = ["Turtle", "Random", "Ask", "Do", "Break"]
 b = ["Others", "Draw", "Keyboard", "Myself", "Mom"]
-c = ["", "Crab", "Turtle", "Butterfly", "Computer", "Yes"]
+c = ["Crab", "Turtle", "Butterfly", "Computer", "Yes"]
 
 q = ""
 w = ""
 e = ""
 r = ""
-# Instead of ideas in random places do it in order with if function
+# The old way, done randomly
 p = len(a) * len(b) * len(c)
 with open("Random Python Ideas.txt", "w") as f:
     for i in range(p):
@@ -47,12 +47,49 @@ with open("Random Python Ideas.txt", "w") as f:
         f.write("\n")
 print("done")
 
-z = len(a)
-x = len(b)
-c = len(c)
-j = 0
-k = 0
-l = 0
-# start change from the very end and slowly to the middle and then to the start of the words
-while True:
-    pass
+# # The new way, does not work
+# z = len(a)
+# x = len(b)
+# v = len(c)
+# j = 0
+# k = 0
+# l = 0
+# # start change from the very end and slowly to the middle and then to the start of the words
+# try:
+#     with open("Random Python Ideas.txt", "w") as f:
+#         for i in range(z):
+#             if j > z:
+#                 j = 0
+#                 break
+#             else:
+#                 j = j + 1
+#             for o in range(x):
+#                 if k > x:
+#                     k = 0
+#                     break
+#                 else:
+#                     k = k + 1
+#                 for p in range(v):
+#                     print(z, x, v, "/", j, k, l)
+#                     if l > v:
+#                         l = 0
+#                         break
+#                     else:
+#                         f.write(a[j])
+#                         f.write(" ")
+#                         f.write(b[k])
+#                         f.write(" ")
+#                         f.write(c[l])
+#                         f.write("\n")
+#                         l = l + 1
+# except IndexError:
+#     if v >= l:
+#         l = 0
+#         k = k + 1
+#     elif x >= k:
+#         k = 0
+#         j = j + 1
+#     elif z >= j:
+#         pass
+# print(z, x, v, "/", j, k, l)
+# print("done")
