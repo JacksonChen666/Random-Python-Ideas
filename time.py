@@ -27,7 +27,7 @@ For more information, please refer to <https://unlicense.org>
 import time
 
 try:
-    a = 0.25
+    a = 1
     start = time.time()
     time.sleep(a)
     end = time.time()
