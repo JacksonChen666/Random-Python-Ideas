@@ -26,9 +26,9 @@ For more information, please refer to <https://unlicense.org>
 """
 import random
 
-a = ["Turtle", "Random", "Ask", "Do", "Break"]
-b = ["Others", "Draw", "Keyboard", "Myself", "Mom"]
-c = ["Crab", "Turtle", "Butterfly", "Computer", "Yes"]
+a = ["Turtle", "Random", "Ask", "Do", "Break", "Reverse", "Smash"]
+b = ["Others", "Draw", "Keyboard", "Myself", "Mom", "Missile", "Register", "Roadster", "Bait"]
+c = ["Crab", "Turtle", "Butterfly", "Computer", "Yes", "Railroad", "Wind", "Physical"]
 
 q = ""
 w = ""
