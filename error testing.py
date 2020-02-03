@@ -106,7 +106,7 @@ def name():
 
 def zerodivision():
     try:
-        q = 100 / 0
+        q = 100/0
     except ZeroDivisionError as error:
         print("Error: Attempted to divide a number with 0:\n{}".format(error))
 
