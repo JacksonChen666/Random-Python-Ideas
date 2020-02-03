@@ -30,7 +30,7 @@ def keyboardinterrupt():
     try:
         print("Press Ctrl+C (all systems)")
         while True:
-            True
+            pass
     except KeyboardInterrupt as error:
         print("Error: User requested cancellation, the actions has been canceled")
 

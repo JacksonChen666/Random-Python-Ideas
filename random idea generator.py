@@ -26,7 +26,7 @@ For more information, please refer to <https://unlicense.org>
 """
 import random
 
-a = ["Turtle", "Random", "Ask"]
+a = ["Turtle", "Random", "Ask", "Do"]
 b = ["Others", "Draw", "Keyboard", "Myself", "Mom"]
 c = ["", "Crab", "Turtle", "Butterfly", "Computer", "Yes"]
 
@@ -34,7 +34,7 @@ q = ""
 w = ""
 e = ""
 r = ""
-
+# Instead of ideas in random places do it in order with if function
 p = len(a) * len(b) * len(c)
 with open("Random Python Ideas.txt", "w") as f:
     for i in range(p):
@@ -46,3 +46,13 @@ with open("Random Python Ideas.txt", "w") as f:
         f.write(str(r))
         f.write("\n")
 print("done")
+
+z = len(a)
+x = len(b)
+c = len(c)
+j = 0
+k = 0
+l = 0
+# start change from the very end and slowly to the middle and then to the start of the words
+while True:
+    pass
