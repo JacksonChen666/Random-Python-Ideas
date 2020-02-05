@@ -54,5 +54,6 @@ if c == 1:
             print("MATH OVER-INTENSIFIES (Calculation took over 1T tries)")
         else:
             print("Umm... what just happened?")
+            raise InterruptedError
 else:
     print("Unsupported Opreation")
