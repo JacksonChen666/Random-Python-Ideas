@@ -50,8 +50,8 @@ if c == 1:
                 print("Math Intensifies (Calculation took over 1M tries)")
             elif e == 1000000000:
                 print("MATH INTENSIFIES (Calculation took over 1B tries)")
-            if e == 1000000000000:
-                print("MATH OVER-INTENSIFIES (Calculation took over 1T tries)")
+        elif e == 1000000000000:
+            print("MATH OVER-INTENSIFIES (Calculation took over 1T tries)")
         else:
             print("Umm... what just happened?")
 else:
