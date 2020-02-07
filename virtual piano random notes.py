@@ -37,7 +37,7 @@ w = "{1}"
 with open("Virtual Piano Random Notes (Don't forget to remove all spaces!).txt", "w") as f:
     n = input("How many notes do you want (Default 100)? ")
     while True:
-        b = b + 1
+        b += 1
         if n == b:
             print("Opreation completed")
             break

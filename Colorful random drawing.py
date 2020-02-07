@@ -33,6 +33,7 @@ turtle.bgcolor("black")
 
 
 # Make turtle go to random positions near the turtle
+# noinspection PyMissingOrEmptyDocstring
 def main():
     while True:
         t.ht()

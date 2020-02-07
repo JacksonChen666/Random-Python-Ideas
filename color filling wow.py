@@ -59,9 +59,9 @@ def main():
         # t.fillcolor(l,k,j)
         # t.down()
         t.goto(b, d)
-        b = b + 1
+        b += 1
         if t.xcor() >= a:
-            d = d + 1
+            d += 1
             b = w
             break
             # print(a,b,c,d) # Debugging

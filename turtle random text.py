@@ -54,6 +54,7 @@ def __init__():
 
 
 def main():
+    # noinspection PyGlobalUndefined
     global q, a, s, d, f
     turtle.bye()
     t.goto(a, d)

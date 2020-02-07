@@ -24,7 +24,8 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
-import random
+import random as rdm
+
 import time
 
 b = input("What is the password?\n")
@@ -46,23 +47,23 @@ else:
     print("ERROR: unable to display data, dumping data.")
     time.sleep(0.5)
     while True:
-        print(random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1),
-              random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
-              random.randint(0, 1))
+        print(rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1),
+              rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1), rdm.randint(0, 1),
+              rdm.randint(0, 1))

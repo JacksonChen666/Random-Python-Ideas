@@ -35,5 +35,5 @@ while True:
     for i in range(a):
         t.forward(500 / a)
         t.left(360 / a)
-    a = a + 1
+    a += 1
     t.clear()

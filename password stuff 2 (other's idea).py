@@ -27,7 +27,9 @@ For more information, please refer to <https://unlicense.org>
 import time
 
 
+# noinspection PyGlobalUndefined
 def ask():
+    # noinspection PyGlobalUndefined
     global b
     b = input("What is the password?\n")
     main()

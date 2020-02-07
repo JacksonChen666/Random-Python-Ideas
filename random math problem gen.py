@@ -64,7 +64,7 @@ def sel():
                     d.append("/")
             d.append(random.randint(a, b))
             m.write("\n")
-    print("\nYour math problem has been succsessfully written into a text document in the same folder as the code!\n")
+    print("\nYour math problem has been successfully written into a text document in the same folder as the code!\n")
     repeat()
 
 
@@ -101,7 +101,7 @@ def repeat():
 
 
 def unknown():
-    print("\nI didn't understant you, can you please try again?\n")
+    print("\nI didn't understand you, can you please try again?\n")
 
 
 def exits():

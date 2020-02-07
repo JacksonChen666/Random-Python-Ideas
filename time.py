@@ -31,7 +31,7 @@ try:
     start = time.time()
     time.sleep(a)
     end = time.time()
-    print("The program ran for a total of", end - start, "seconds with a extra time of", end - start - a, "seconds.")
+    print("The program ran for a total of", end - start, "seconds with a extra times of", end - start - a, "seconds.")
     exit()
 except KeyboardInterrupt:
     print("Canceled")

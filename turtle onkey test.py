@@ -33,6 +33,7 @@ def test():
     t.write("Test")
 
 
-turtle.onscreenclick(test())
+turtle.onscreenclick(test)
 
-turtle.bye()
+turtle.listen()
+turtle.mainloop()

@@ -38,7 +38,7 @@ if c == 1:
         exit()
     while True:
         if b == a:
-            print("Yay! It took {} time(s) to reach {} from {}".format(e, a, g))
+            print("Yay! It took {} times(s) to reach {} from {}".format(e, a, g))
             exit()
         elif b > a:
             print("Oops! The number {} has gone above the target number {} and is now aborting!".format(g, a))

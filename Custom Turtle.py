@@ -109,7 +109,7 @@ def writeinputtext():
 
 # def pos():
 #     t.write(turtle.pos(), align="center", font=("Arial", 50, "normal"))
-#     time.sleep(1)
+#     times.sleep(1)
 #     undo()
 #     turtle.listen()
 #     turtle.mainloop()
