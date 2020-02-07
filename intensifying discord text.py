@@ -1,6 +1,6 @@
-import os
+from os import remove
 
-a = input("Text to overintensify (Discord)\n")
+a = input("Text to over-intensify (Discord)\n")
 b = list(a)
 with open("TEMP.txt", "w") as f:
     f.write("***")
@@ -15,4 +15,4 @@ with open("TEMP.txt", "w") as f:
 with open("TEMP.txt", "r") as w:
     h = w.read()
     print(h)
-    os.remove("TEMP.txt")
+    remove("TEMP.txt")
