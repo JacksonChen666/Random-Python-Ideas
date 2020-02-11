@@ -35,16 +35,16 @@ def main():
     global r, g, b
     while True:
         print(r, g, b)
+        b += 1
         if b >= 255:
             b = 0
             g += 1
-            break
-    if g >= 255:
-        r += 1
-        g = 0
-    if r >= 255:
-        print("Done")
-        exit()
+        if g >= 255:
+            r += 1
+            g = 0
+        if r >= 255:
+            print("Done")
+            exit()
 
 
 while True:
