@@ -24,24 +24,28 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
-from os import remove
+r = 0
+g = 0
+b = 0
 
 
+# How it should work:
+# Adds 1 to blue, then if it is over 255, add 1 to green, then if it goes over again, add 1 to red and stop if over 255
 def main():
-    a = input("Text to over-intensify (Discord ONLY)\n")
-    with open("TEMP.txt", "w") as f:
-        f.write("**")
-        for i in range(len(a)):
-            if a[i] == " ":
-                f.write(" *")
-            else:
-                f.write("*")
-                f.write(a[i])
-        f.write("**")
-    with open("TEMP.txt") as w:
-        h = w.read()
-        print(h)
-        remove("TEMP.txt")
+    global r, g, b
+    while True:
+        print(r, g, b)
+        if b >= 255:
+            b = 0
+            g += 1
+            break
+    if g >= 255:
+        r += 1
+        g = 0
+    if r >= 255:
+        print("Done")
+        exit()
 
 
-main()
+while True:
+    main()
