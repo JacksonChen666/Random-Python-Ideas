@@ -47,6 +47,10 @@ def edgeCheck():
         t.goto(t.xcor(), turtle.window_height() * -1 + 500)
 
 
+def exits():
+    exit()
+
+
 def main():
     turtle.title("Shakey")
     t.clear()
@@ -55,6 +59,7 @@ def main():
     a = turtle.textinput("Text", "What text on the screen do you want?")
     b = turtle.textinput("Shakeyness", "How many pixels for shakyness? (recommended: 25)")
     turtle.title("Shakey {}".format(a))
+    # turtle.onscreenclick(exits, 2)
     try:
         while True:
             # print(t.xcor(),t.ycor())
@@ -79,6 +84,9 @@ def main():
         t.write("Error: {}\nClick to exit".format(err), font=("arial", 25, "normal"))
         s.update()
         turtle.exitonclick()
+    except KeyboardInterrupt:
+        print("User Cancellation")
+        exit()
 
 
 main()
