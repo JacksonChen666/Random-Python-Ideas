@@ -27,32 +27,28 @@ For more information, please refer to <https://unlicense.org>
 import random
 import turtle
 
-t = turtle.Turtle()
-s = turtle.Screen()
-s.setup(500, 500)
-s.tracer(0)
-a = 2
+t = turtle.Pen()
+t.speed(0)
 t.ht()
 t.up()
-t.goto(-500, 0)
-t.down()
+s = turtle.Screen()
+s.tracer(0)
+s.setup(width=1.0, height=1.0)
 
 
-def draw():
-    global a
-    for i in range(a):
-        t.forward(100 / a)
-        t.left(360 / a)
-
-
-while True:
+def main():
+    turtle.title("Shakey")
     t.clear()
-    if t.xcor() > 500:
-        t.up()
-        t.goto(-500, 0)
-        t.down()
-        a += 1
-    draw()
-    s.update()
-    t.pencolor(random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1))
-    t.forward(5)
+    t.goto(0, 0)
+    turtle.onscreenclick(t.goto)
+    a = turtle.textinput("Text", "What text on the screen do you want?")
+    turtle.title("Shakey {}".format(a))
+    while True:
+        t.forward(random.uniform(0, 10))
+        t.right(random.uniform(0, 360))
+        t.write(a, font=("Arial", 100, "normal"))
+        s.update()
+        t.clear()
+
+
+main()
