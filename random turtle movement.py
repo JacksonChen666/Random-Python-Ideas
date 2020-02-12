@@ -36,19 +36,49 @@ s.tracer(0)
 s.setup(width=1.0, height=1.0)
 
 
+def edgeCheck():
+    if t.xcor() > turtle.window_width():
+        t.goto(turtle.window_width() - 500, t.ycor())
+    if t.ycor() > turtle.window_height():
+        t.goto(t.xcor(), turtle.window_height() - 500)
+    if t.xcor() < turtle.window_width() * -1:
+        t.goto(turtle.window_width() * -1 + 500, t.ycor())
+    if t.ycor() < turtle.window_height() * -1:
+        t.goto(t.xcor(), turtle.window_height() * -1 + 500)
+
+
 def main():
     turtle.title("Shakey")
     t.clear()
     t.goto(0, 0)
     turtle.onscreenclick(t.goto)
     a = turtle.textinput("Text", "What text on the screen do you want?")
+    b = turtle.textinput("Shakeyness", "How many pixels for shakyness? (recommended: 25)")
     turtle.title("Shakey {}".format(a))
-    while True:
-        t.forward(random.uniform(0, 10))
-        t.right(random.uniform(0, 360))
-        t.write(a, font=("Arial", 100, "normal"))
+    try:
+        while True:
+            # print(t.xcor(),t.ycor())
+            t.forward(random.uniform(0, int(b)))
+            t.right(random.uniform(0, 360))
+            t.write(a, font=("Arial", 100, "normal"))
+            edgeCheck()
+            s.update()
+            t.clear()
+    except turtle.Terminator as err:
+        print("User closed turtle window, aborting")
+        exit()
+    except TypeError as err:
+        print(err)
+        t.goto(-600, 0)
+        t.write("Error: {}\nClick to exit".format(err), font=("arial", 25, "normal"))
         s.update()
-        t.clear()
+        turtle.exitonclick()
+    except ValueError as err:
+        print(err)
+        t.goto(-600, 0)
+        t.write("Error: {}\nClick to exit".format(err), font=("arial", 25, "normal"))
+        s.update()
+        turtle.exitonclick()
 
 
 main()
