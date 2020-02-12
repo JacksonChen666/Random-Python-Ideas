@@ -24,6 +24,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
+import random
 import turtle
 
 t = turtle.Turtle()
@@ -53,4 +54,5 @@ while True:
         a += 1
     draw()
     s.update()
-    t.forward(5)
+    t.pencolor(random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1))
+    t.forward(1)
