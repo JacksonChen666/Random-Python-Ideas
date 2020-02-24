@@ -27,6 +27,8 @@ For more information, please refer to <https://unlicense.org>
 r = 0
 g = 0
 b = 0
+inputs = ""
+line = 0
 
 
 # How it should work:
@@ -46,8 +48,30 @@ def main():
                 g = 0
             if r > 255:
                 print("Done")
-                exit()
+                read()
+
+
+# def read():
+#     global inputs, r, g, b
+#     inputs = input("Would you like the file to be printed?\n")
+#     inputs.lower()
+#     if inputs == "y":
+#         while True:
+#             print("{} {} {}".format(r, g, b))
+#             b += 1
+#             if b > 255:
+#                 b = 0
+#                 g += 1
+#             if g > 255:
+#                 r += 1
+#                 g = 0
+#             if r > 255:
+#                 print("Done")
+#     else:
+#         print("Ok, bye")
+#         exit()
 
 
 while True:
     main()
+    read()

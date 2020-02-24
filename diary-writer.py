@@ -24,16 +24,23 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 """
-print("The way to calculate FPS (Frames Per Second) to seconds is 1 divided by the FPS for example 1/60")
-try:
-    a = int(input("What is the FPS?\n"))
-    b = int(input("How many frames?\n"))
-    c = 1 / a
-    d = c * b
-    print("\nDebug info:\nFPS: {0}\nFrames: {1}\n1 Frame of {0} FPS: {2}\n{2} Frames of {1} FPS: {3}".format(a, b, c,
-                                                                                                             d))
-    print("Math: ({}/{})*{}".format("1", a, b))
-    print("\nThe FPS is {} so {} frames is a total of {} seconds".format(a, b, d))
-except ValueError:
-    print("Not a number, exiting")
-    exit()
+import time
+
+
+def main():
+    with open("My Diary.txt", "a") as a:
+        day = input("What do you want to write?\n")
+        a.write("{0}\n{1}\n\n".format(time.ctime(), day))
+        while True:
+            ask = input("Do you have anything to add on?[y/N]\n")
+            ask.lower()
+            if ask == "y":
+                main()
+            elif ask == "n":
+                print("Ok then, bye!")
+                exit()
+            else:
+                print("I don't understand you. Can you please try again?")
+
+
+main()
