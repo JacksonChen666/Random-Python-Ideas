@@ -30,7 +30,7 @@ t = turtle.Pen()
 s = turtle.Screen()
 a = 2
 t.speed(5)
-\
+
 while True:
     t.write(a, font=("Arial", 50, "normal"), align="center")
     if a >= 11:
