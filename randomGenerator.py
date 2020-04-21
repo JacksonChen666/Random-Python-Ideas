@@ -17,6 +17,7 @@ def setSeed(seed=None):
 
 def randomString(amount):
     """
+
     Generates random string from string.printable (Includes new lines etc.)
     :param amount: Amount of characters to generate (Default 10)
     :return:
